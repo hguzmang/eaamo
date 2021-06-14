@@ -68,11 +68,11 @@ msgid "Model details"
 msgstr ""
 
 #: layout.py:73
-msgid "Test & Contain"
+msgid ""
 msgstr ""
 
 #: layout.py:74
-msgid "A demonstration of the Test & Contain tool for selecting an optimal testing strategy."
+msgid "A demonstration of the tool for selecting an optimal testing strategy."
 msgstr ""
 
 #: layout.py:75
@@ -133,9 +133,5 @@ msgstr ""
 
 #: layout.py:149
 msgid "Click on the 'Save' button above to add the current solution to the list."
-msgstr ""
-
-#: layout.py:178
-msgid "© Test and Contain 2021."
 msgstr ""
 

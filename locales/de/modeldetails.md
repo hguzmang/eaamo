@@ -1,7 +1,5 @@
 ## Model Details
-Mathematical details of our model are provided [here](assets/companion.pdf).  You
-can also review [our website](https://www.testandcontain.com) for an introduction
-and historical information about this project.
+Mathematical details of our model are provided [here](assets/companion.pdf).  
 
 In this section we describe briefly the model parameters and we give
 general explanation of the computation of results.
@@ -56,8 +54,7 @@ Once infected, each category has different rates of getting a serious illness. W
 
 
 ### Computation of results
-The solutions you are exploring have been carefully selected using the
-Test and Contain algorithm. In particular, our mechanism ensures that
+The solutions you are exploring have been carefully selected using the algorithm. In particular, our mechanism ensures that
 no solution you see is better in all objectives than another.
 
 The group sizes for each test are already limited to 1, 3, 5 or 10

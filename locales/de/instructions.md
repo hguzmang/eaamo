@@ -1,7 +1,7 @@
 ## Guide
 
 #### Welcome
-Welcome to the Test and Contain user guide! The goal of the platform is to guide you in allocating a fixed number of tests across a university population optimally. In the following sections, we explain how to use this tool.
+Welcome to the the user guide! The goal of the platform is to guide you in allocating a fixed number of tests across a university population optimally. In the following sections, we explain how to use this tool.
 
 #### Background
 This web app assists you in finding a test allocation that best suits your priorities. We have preloaded data matching a model university with 500 professors, 500 cafeteria staff and 9000 students. The following [model details section](#modeldetails) describes the full parameter settings. In a future version, the data will be replaced by real data obtained from our partner university.

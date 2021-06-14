@@ -72,15 +72,15 @@ msgid "Select Campus"
 msgstr "Seleccionar campus"
 
 #: layout.py:73
-msgid "Test & Contain"
-msgstr "Test & Contain"
+msgid ""
+msgstr ""
 
 #: layout.py:74
 msgid ""
-"A demonstration of the Test & Contain tool for selecting an optimal testing "
+"A demonstration of the tool for selecting an optimal testing "
 "strategy."
 msgstr ""
-"Una demostración de la herramienta Test & Contain para seleccionar una "
+"Una demostración de la herramienta para seleccionar una "
 "estrategia de pruebas óptima."
 
 #: layout.py:75
@@ -158,7 +158,3 @@ msgid ""
 "Click on the 'Save' button above to add the current solution to the list."
 msgstr ""
 "Click en el botón de 'Guardar' para agregar la solución actual a la lista"
-
-#: layout.py:178
-msgid "© Test and Contain 2021."
-msgstr "© Test and Contain 2021."

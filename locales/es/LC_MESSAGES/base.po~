@@ -67,13 +67,9 @@ msgstr "Instrucciones"
 msgid "Model details"
 msgstr "Detalles del modelo"
 
-#: layout.py:73
-msgid "Test & Contain"
-msgstr "Test & Contain"
-
 #: layout.py:74
-msgid "A demonstration of the Test & Contain tool for selecting an optimal testing strategy."
-msgstr "Una demostración de la herramienta Test & Contain para seleccionar una estrategia de pruebas óptima."
+msgid "A demonstration of the tool for selecting an optimal testing strategy."
+msgstr "Una demostración de la herramienta para seleccionar una estrategia de pruebas óptima."
 
 #: layout.py:75
 msgid "This web app assists you in finding a test allocation that best suits your priorities. We have preloaded data matching a model university with 500 professors, 500 cafeteria staff and 9000 students. The university is able to perform 500 group tests, where groups can be of size 1 to 10. You can access instructions or view our full parameter settings from the menu above."
@@ -134,8 +130,4 @@ msgstr "Soluciones guardadas"
 #: layout.py:149
 msgid "Click on the 'Save' button above to add the current solution to the list."
 msgstr "Click en el botón de 'Guardar' para agregar la solución actual a la lista"
-
-#: layout.py:178
-msgid "© Test and Contain 2021."
-msgstr "© Test and Contain 2021."
 

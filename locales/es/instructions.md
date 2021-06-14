@@ -2,7 +2,7 @@
 
 #### Bienvenida
 
-¡Bienvenido(a) a la guía de usuario de Test and Contain! El objetivo de la plataforma es guiar al usuario en la asignación de un número fijo de pruebas a través de la población de la universidad de manera óptima. En las siguientes secciones, explicaremos como utilizar esta herramienta.
+¡Bienvenido(a) a la guía de usuario! El objetivo de la plataforma es guiar al usuario en la asignación de un número fijo de pruebas a través de la población de la universidad de manera óptima. En las siguientes secciones, explicaremos como utilizar esta herramienta.
 
 
 #### Antecedentes

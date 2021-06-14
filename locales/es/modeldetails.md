@@ -1,5 +1,5 @@
 ### Cómputo de los resultados
-Las soluciones mostradas han sido cuidadosamente seleccionadas usando el algoritmo Test and Contain. En particular, nuestro mecanismo se asegura de que ninguna solución sea mejor en todos los objetivos que otra de ellas.
+Las soluciones mostradas han sido cuidadosamente seleccionadas usando el algoritmo. En particular, nuestro mecanismo se asegura de que ninguna solución sea mejor en todos los objetivos que otra de ellas.
 
 Los tamaños de grupo para cada prueba están limitados a 1, 3, 5 o 10 personas por grupo (derivado de tamaños típicos en pruebas grupales).
 
@@ -11,7 +11,7 @@ Para evaluar el plan de pruebas, generamos todas las combinaciones válidas de t
 Para este ejemplo particular, la calidad de un plan de prueba está expresado en cuatro números: el número esperado de infecciones prevenidas, así como el número de personas en cuarentena innecesaria para cada una de las tres categorías. Después, estas soluciones son ordenadas por el número de infecciones prevenidas y después filtradas, así que las únicas que permanecen están en la frontera de Pareto, lo que significa que ninguna de ellas ha sido superada en todos sus aspectos respecto a otra.
 
 ## Detalles del modelo
-Los detalles matemáticos de nuestro modelo se encuentran [aquí](assets/companion.pdf). También se puede revisar nuestro  [nuestro sitio](https://www.testandcontain.com) para una introducción e información histórica del proyecto.
+Los detalles matemáticos de nuestro modelo se encuentran [aquí](assets/companion.pdf).
 
 En esta sección describimos brevemente los parámetros del modelo y se explica de manera general el cómputo de los resultados.
 

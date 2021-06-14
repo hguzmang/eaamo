@@ -59,13 +59,9 @@ msgstr "Zugeordnete Tests"
 msgid "Group sizes"
 msgstr "Gruppengröße"
 
-#: layout.py:57
-msgid "Test & Contain"
-msgstr "Test & Contain"
-
 #: layout.py:58
-msgid "A demonstration of the Test & Contain tool for selecting an optimal testing strategy."
-msgstr "Eine Demonstration des Test & Contain Tools."
+msgid "A demonstration of the tool for selecting an optimal testing strategy."
+msgstr "Eine Demonstration des Tools."
 
 #: layout.py:59
 msgid "This web app assists you in finding a test allocation that best suits your priorities. We have preloaded data matching a model university with 500 professors, 500 cafeteria staff and 9000 students. The university is able to perform 500 group tests, where groups can be of size 1 to 10. Click on any of the two buttons below to read through instructions or view our full parameter settings."
@@ -134,8 +130,4 @@ msgstr "Gespeicherte Lösungen"
 #: layout.py:135
 msgid "Click on the 'Save' button above to add the current solution to the list."
 msgstr "Klicken sie auf den 'Speichern' Knopf um die aktuelle Lösung zu der Liste hinzuzufügen."
-
-#: layout.py:164
-msgid "© Test and Contain 2021."
-msgstr "© Test and Contain 2021."
 
