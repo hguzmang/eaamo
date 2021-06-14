@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-04-16 14:26+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: callbacks.py:18
+msgid "# Unnecessarily self-isolating individuals"
+msgstr "# Personas en cuarentena"
+
+#: callbacks.py:19
+msgid "# Prevented critical infections"
+msgstr "# Infecciones críticas prevenidas"
+
+#: callbacks.py:136
+msgid "There are {} solutions that satisfy the thresholds."
+msgstr "Existen {} soluciones que satisfacen los umbrales."
+
+#: callbacks.py:138
+msgid "There is one solution that satisfies the thresholds."
+msgstr "Existe una solución que satisface los umbrales"
+
+#: callbacks.py:181
+msgid "Allocation: {}."
+msgstr "Asignación: {}."
+
+#: callbacks.py:182
+msgid "Group sizes: {}."
+msgstr "Tamaños de grupo: {}."
+
+#: layout.py:13
+msgid "Size"
+msgstr "Tamaño"
+
+#: layout.py:14
+msgid "Threshold"
+msgstr "Umbral"
+
+#: layout.py:15
+msgid "Percent"
+msgstr "Porcentaje"
+
+#: layout.py:38
+msgid "Allocated Tests"
+msgstr "Pruebas asignadas"
+
+#: layout.py:40
+msgid "Group sizes"
+msgstr "Tamaños de grupo"
+
+#: layout.py:52
+msgid "Instructions"
+msgstr "Instrucciones"
+
+#: layout.py:53
+msgid "Model details"
+msgstr "Detalles del modelo"
+
+#: layout.py:62
+msgid "Select Campus"
+msgstr "Seleccionar campus"
+
+#: layout.py:73
+msgid "Test & Contain"
+msgstr "Test & Contain"
+
+#: layout.py:74
+msgid ""
+"A demonstration of the Test & Contain tool for selecting an optimal testing "
+"strategy."
+msgstr ""
+"Una demostración de la herramienta Test & Contain para seleccionar una "
+"estrategia de pruebas óptima."
+
+#: layout.py:75
+msgid ""
+"This web app assists you in finding a test allocation that best suits your priorities. We have preloaded data matching a model university with 500 professors, 500 cafeteria staff and 9000 students. The university is able to perform 500 group tests, where groups can be of size 1 to 10. You can access instructions or view our full parameter settings from the menu above."
+msgstr ""
+"Esta aplicación web le asiste en la búsqueda de la asignación de pruebas que "
+"se ajuste mejor a sus prioridades. Hemos precargado información de un modelo "
+"para una universidad."
+" Los grupos pueden ser de tamaño 1 hasta 10 personas. Utilice el menú de arriba "
+"para leer las instrucciones de uso o la configuración de parámetros."
+
+#: layout.py:90
+msgid "Limit the number of unnecessary self-isolations in each category"
+msgstr "Limitar el número de personas en cuarentena"
+
+#: layout.py:91
+msgid ""
+"Only solutions whose containment objectives lie below the thresholds are "
+"retained"
+msgstr ""
+"Solamente son mostradas soluciones cuyos objetivos de contención se "
+"encuentran bajo los umbrales"
+
+#: layout.py:99
+msgid "Guarantee a minimum number of prevented critical infections"
+msgstr "Garantizar un número mínimo de infecciones críticas prevenidas"
+
+#: layout.py:100
+msgid ""
+"Only solutions whose health objective lies above the threshold are retained."
+msgstr ""
+"Solamente son mostradas las soluciones cuyo objetivo de salud se encuentran "
+"sobre el umbral"
+
+#: layout.py:111
+msgid "Select a solution"
+msgstr "Seleccione una solución"
+
+#: layout.py:112
+msgid "There are X solutions that satisfy the thresholds."
+msgstr "Existen X soluciones que satisfacen los umbrales"
+
+#: layout.py:113
+msgid "Choose which one to chart using the input box."
+msgstr "Seleccione cuál graficar usando la caja de entrada"
+
+#: layout.py:126
+msgid "Solution details"
+msgstr "Detalles de la solución"
+
+#: layout.py:130
+msgid ""
+"In order to save this solution for future reference, click the save button."
+msgstr "Para guardar la solución, presione el botón de guardar"
+
+#: layout.py:131
+msgid "Save"
+msgstr "Guardar"
+
+#: layout.py:134
+msgid "Find the right solution"
+msgstr "Encuentre la solución adecuada"
+
+#: layout.py:135
+msgid "Adjust the thresholds (cut-offs) to narrow down the set of solutions."
+msgstr "Ajuste los umbrales (cortes) para acotar el conjunto de soluciones."
+
+#: layout.py:148
+msgid "Saved solutions"
+msgstr "Soluciones guardadas"
+
+#: layout.py:149
+msgid ""
+"Click on the 'Save' button above to add the current solution to the list."
+msgstr ""
+"Click en el botón de 'Guardar' para agregar la solución actual a la lista"
+
+#: layout.py:178
+msgid "© Test and Contain 2021."
+msgstr "© Test and Contain 2021."
