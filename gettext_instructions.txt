@@ -1,0 +1,2 @@
+I follow these instructions:
+https://phrase.com/blog/posts/translate-python-gnu-gettext/
