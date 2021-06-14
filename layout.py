@@ -255,7 +255,7 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
     ## Start the DOM layout
     layout = dbc.Container([
         navbar,
-        asked_no_sols_card,
+        #asked_no_sols_card,
         spinner,
         header,        
         main_div,
