@@ -85,9 +85,9 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
     intro_text = _("This web app assists you in finding a test allocation that best suits your priorities. We have preloaded data matching some university models. The university is able to perform group tests, where groups can be of size 1 to 10. You can access instructions or view our full parameter settings from the menu above.")
     
     spinner = dbc.Spinner(html.Div(id="loading-output"))
-    asked_no_sols_card = dbc.Card(
-        dbc.Row([
-            dbc.Col([
+    '''
+    Esto puede ir en asked_no_sols_card
+    dbc.Col([
                 html.H5(_("Please select an approximated number of solutions to manage: ")),
             ], width=15),
             dbc.Col([
@@ -95,8 +95,14 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
                                 min=0, max=100,
                                 value=10,
                                 size=80)),
-            ])
-        ]), body=True, className="pt-2 pb-1")
+            ]),'''
+    asked_no_sols_card = dbc.Card(
+        dbc.Row([
+            
+            dbc.Col([
+                html.A((" More adjustments"), href='http://52.171.195.249:8050/')
+            ], width=15),
+        ]), body=True, className="pt-1 pb-1")
 
     header = html.Div([
         html.H1(id='location-label',style={"display":"inline"}),
@@ -251,11 +257,13 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
     solutions_body_p = [html.Tbody(rows_p)]
     solutions_table_p = dbc.Table(table_header_p + solutions_body_p, bordered=True, className="table table-info",
     style={"text-align": "center", "width" :"90%", "align": "center"})
-
+    footer = html.Div([
+        html.A(("Download the code"), href='assets/eaamo-demo.zip')
+    ], className="text-left p-3")
     ## Start the DOM layout
     layout = dbc.Container([
         navbar,
-        #asked_no_sols_card,
+        asked_no_sols_card,
         spinner,
         header,        
         main_div,
@@ -266,7 +274,7 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
         solutions_table_d,
         solutions_table_pi,
         solutions_table_p,
-
+        footer,
         # hidden elements to store data in browser
         dcc.Store(id="solutions"),
         dcc.Store(id="threshold_vals"),
