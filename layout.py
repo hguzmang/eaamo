@@ -85,9 +85,14 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
     intro_text = _("This web app assists you in finding a test allocation that best suits your priorities. We have preloaded data matching some university models. The university is able to perform group tests, where groups can be of size 1 to 10. You can access instructions or view our full parameter settings from the menu above.")
     
     spinner = dbc.Spinner(html.Div(id="loading-output"))
-    '''
-    Esto puede ir en asked_no_sols_card
-    dbc.Col([
+
+    asked_no_sols_card = dbc.Card(
+        dbc.Row([
+            
+            dbc.Col([
+                html.A((" More adjustments"), href='http://52.171.195.249:8050/')
+            ], width=3),
+            dbc.Col([
                 html.H5(_("Please select an approximated number of solutions to manage: ")),
             ], width=15),
             dbc.Col([
@@ -95,13 +100,10 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
                                 min=0, max=100,
                                 value=10,
                                 size=80)),
-            ]),'''
-    asked_no_sols_card = dbc.Card(
-        dbc.Row([
-            
-            dbc.Col([
-                html.A((" More adjustments"), href='http://52.171.195.249:8050/')
             ], width=15),
+            dbc.Col([
+                dbc.Button(_("Calculate"), id='asked_no_solutions_button', color="primary"),
+            ], width=15)
         ]), body=True, className="pt-1 pb-1")
 
     header = html.Div([

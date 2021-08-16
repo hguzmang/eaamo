@@ -192,13 +192,12 @@ def update_percentage_Healt(threshold, campus_id):
 @dash_app.callback(
     Output("asked_no_solutions_store","data"),
     Output("loading-output", "children"),
-    Input("asked_no_solutions", "value"),
-    #Input(component_id='asked_no_solutions', component_property='n_clicks'),
+    Input("asked_no_solutions_button", "n_clicks"),
+    State("asked_no_solutions", "value"),
     State('campus_id','data')
 )
-def update_asked_solutions(asked_no_solutions, campus_id):
+def update_asked_solutions(n_clicks,asked_no_solutions, campus_id):
     print("Running 'update_asked_solutions'.")
-    #Improve the efficiencia of calculation calls
     if campus_id is None:
         print ("Default campus")
         campus_id = "campus1"
