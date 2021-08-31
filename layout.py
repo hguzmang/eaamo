@@ -68,7 +68,7 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
                 label=_("Select Campus")
             ),
         ],
-        brand="COVID-19 Optimal tests allocation",
+        brand="Test & Contain. COVID-19 Optimal tests allocation",
         brand_href="#",
         color="#800080",
         # light=True,
@@ -81,7 +81,8 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
     bucket_headers += "__"
 
     ## Define the introductory header div
-    intro_lead = _("A demonstration of this tool for selecting an optimal testing strategy.")
+    intro_title = _("Test & Contain  ")
+    intro_lead = _("A demonstration of the Test & Contain tool for selecting an optimal testing strategy.")
     intro_text = _("This web app assists you in finding a test allocation that best suits your priorities. We have preloaded data matching some university models. The university is able to perform group tests, where groups can be of size 1 to 10. You can access instructions or view our full parameter settings from the menu above.")
     
     spinner = dbc.Spinner(html.Div(id="loading-output"))
@@ -107,9 +108,12 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
         ]), body=True, className="pt-1 pb-1")
 
     header = html.Div([
+        html.H1(intro_title,style={"display":"inline"}),
         html.H1(id='location-label',style={"display":"inline"}),
         html.H4(" " + str(no_solutions) + " solutions were analyzed",style={"display":"inline"}),
         html.H4(" with a budget of " + str(budget) + " tests.",style={"display":"inline"}),
+        html.Hr(),
+        html.P(intro_lead, className="lead"),
         html.Hr(),
         html.P(intro_text),
         # dbc.Button(_("Instructions"), color='primary', href="#instructions", external_link=True, className="mr-2"),
@@ -260,6 +264,8 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
     solutions_table_p = dbc.Table(table_header_p + solutions_body_p, bordered=True, className="table table-info",
     style={"text-align": "center", "width" :"90%", "align": "center"})
     footer = html.Div([
+        html.A(_("© Test and Contain 2021."), href='https://www.testandcontain.com'),
+        html.P(),
         html.A(("Download the code"), href='assets/eaamo-demo.zip')
     ], className="text-left p-3")
     ## Start the DOM layout

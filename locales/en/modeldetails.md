@@ -1,6 +1,6 @@
 ### Computation of results
 The solutions you are exploring have been carefully selected using the
-algorithm. In particular, our mechanism ensures that
+Test and Contain algorithm. In particular, our mechanism ensures that
 no solution you see is better in all objectives than another.
 
 The group sizes for each test are already limited to 1, 3, 5 or 10
@@ -25,7 +25,11 @@ in every aspect.
 
 
 ## Model Details
-Mathematical details of our model are provided [here](assets/companion2.pdf). In this section we describe briefly the model parameters and we give
+Mathematical details of our model are provided [here](assets/companion2.pdf).  You
+can also review [our website](https://www.testandcontain.com) for an introduction
+and historical information about this project.
+
+In this section we describe briefly the model parameters and we give
 general explanation of the computation of results.
 
 ### Parameters
