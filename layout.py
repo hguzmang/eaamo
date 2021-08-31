@@ -92,7 +92,8 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
             
             dbc.Col([
                 html.A((" More adjustments"), href='http://104.215.96.205:8050/')
-            ], width=3),
+            ], width=3)'''HAGG comment for the front, not for Julia
+            ,
             dbc.Col([
                 html.H5(_("Please select an approximated number of solutions to manage: ")),
             ], width=15),
@@ -104,7 +105,7 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
             ], width=15),
             dbc.Col([
                 dbc.Button(_("Calculate"), id='asked_no_solutions_button', color="primary"),
-            ], width=15)
+            ], width=15)'''
         ]), body=True, className="pt-1 pb-1")
 
     header = html.Div([
