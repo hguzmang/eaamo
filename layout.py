@@ -91,7 +91,7 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
         dbc.Row([
             
             dbc.Col([
-                html.A((" More adjustments"), href='http://52.171.195.249:8050/')
+                html.A((" More adjustments"), href='http://104.215.96.205:8050/')
             ], width=3),
             dbc.Col([
                 html.H5(_("Please select an approximated number of solutions to manage: ")),
@@ -271,8 +271,8 @@ def get_layout(number_categories, no_solutions, budget, buckets, table_d, table_
     ## Start the DOM layout
     layout = dbc.Container([
         navbar,
-        #asked_no_sols_card,
-        #spinner,
+        asked_no_sols_card,
+        spinner,
         header,        
         main_div,
         saved_solutions,
