@@ -1,3 +1,16 @@
+'''
+MIT License
+
+Optimal Testing and Containment Strategies for Universities in Mexico amid COVID-19
+
+Copyright © 2021 Test and Contain. Luis Benavides-Vázquez, Héctor Alonso Guzmán-Gutiérrez, Jakob Jonnerby, Philip Lazos, Edwin Lock, Francisco J. Marmolejo-Cossío, Ninad Rajgopal,and José Roberto Tello-Ayala. https://www.testandcontain.com/
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+'''
 import dash
 import time, random, pandas as pd, json
 from dash.dash import no_update
@@ -79,23 +92,14 @@ def get_fig(solution, campus_id):
     x_prev=np.trunc(x_prev).astype(int).tolist()
     y_prev = [population['name']]
     health_fig = go.Bar(
-                x=x_prev,#-solution[health_label],
-                y=[y_prev[i]+"<br>("+str(x_prev[i])+")   " for i in range(len(y_prev))],#y_prev,#[population['name']],
+                x=x_prev,
+                y=[y_prev[i]+"<br>("+str(x_prev[i])+")   " for i in range(len(y_prev))],
                 marker=dict(color=['orange'],
                             line=dict(color='black', width=0)),
                 orientation='h')
     # Add subfigures to fig
     fig.append_trace(contain_fig, 1, 1)
     fig.append_trace(health_fig, 2, 1)
-    # Add annotation to end of containment bars
-    #for i in range(k):
-    #    count = int(solution[contain_labels][i])
-    #    fig.add_annotation(xref='x1', yref='y1', x=count, y=i, xshift=10, xanchor="left", text=str(count), showarrow=False)
-
-    # Add annotation to end of health bar
-    #count = int(-solution[health_label])
-    #fig.add_annotation(xref='x2', yref='y2', x=count, xshift=10, y=0, xanchor="left", text=str(count), showarrow=False)
-
     # Fix the x-axis of health bar subplot
     fig.update_xaxes(range=[0, sum(cat['size'] for cat in categories)], row=2, col=1)
 
@@ -261,8 +265,6 @@ def update_displayed_solution(jsoned_solutions, sol_index, campus_id, solutions)
 def update_solution_set(thresholds, threshold_h, asked_no_solutions, campus_id, current_sol):
     """Updates the set of solutions stored when one of the thresholds changes."""
     print("Running 'update_solution_set'.")
-    #if (campus_id.has_changed):
-    #    print ("Campus has changed")
     # Check that all thresholds are integers, otherwise do nothing.
     if not all(map(lambda x: isinstance(x, int), thresholds)):
         return (no_update,)*6
@@ -339,7 +341,6 @@ def save_solution(n_clicks, campus_id, sol_index, solutions, jsoned_solutions, s
                       figure=fig, config={'staticPlot': True}, className="mb-1"),
             html.Span(_("Allocation: {}.").format(t)),
             html.Span(_("Group sizes: {}.").format(g)),
-            # dbc.Button("Delete", id={'type':'delete', 'index': timestamp}),
             ], id={'type': 'saved_solution', 'index': timestamp}, className="p-3 mb-3"),
     ], width=6)
     saved_solutions.append(column)
